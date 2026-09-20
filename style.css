@@ -1,0 +1,57 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #eee;
+}
+header, footer {
+    background: navy;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+nav {
+    background: black;
+    padding: 12px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 15px;
+}
+nav a:hover { color: yellow; }
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+section, article, aside {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+img { width: 200px; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+input, select {
+    display: block;
+    width: 90%;
+    padding: 8px;
+    margin: 8px;
+}
+button {
+    padding: 8px 15px;
+    background: navy;
+    color: white;
+    border-radius: 5px;
+}
+button:hover { background: black; }
+@media(max-width:600px) {
+    main { width: 90%; }
+}
