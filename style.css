@@ -1,57 +1,147 @@
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     margin: 0;
-    background: #eee;
+    background-color: #f2f6ff;
+    color: #222;
 }
-header, footer {
-    background: navy;
+
+header {
+    background-color: #3157a4;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 25px;
 }
+
 nav {
-    background: black;
-    padding: 12px;
+    background-color: #222;
     text-align: center;
+    padding: 12px;
 }
+
 nav a {
     color: white;
+    text-decoration: none;
     margin: 15px;
+    padding: 8px;
 }
-nav a:hover { color: yellow; }
+
+nav a:hover {
+    background-color: #3157a4;
+    border-radius: 5px;
+}
+
 main {
-    width: 80%;
-    margin: 20px auto;
+    width: 85%;
+    margin: 25px auto;
 }
+
 section, article, aside {
-    background: white;
-    padding: 15px;
-    margin: 10px;
-    border: 1px solid gray;
-    border-radius: 8px;
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
 }
-img { width: 200px; }
+
+h2 {
+    text-align: center;
+    color: #3157a4;
+}
+
+.hero {
+    text-align: center;
+}
+
+.button, button {
+    background-color: #3157a4;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover, button:hover {
+    background-color: #1d3670;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 70%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+figcaption {
+    margin-top: 8px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
 }
+
 th, td {
-    border: 1px solid black;
-    padding: 8px;
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: center;
 }
-input, select {
-    display: block;
-    width: 90%;
-    padding: 8px;
-    margin: 8px;
-}
-button {
-    padding: 8px 15px;
-    background: navy;
+
+th {
+    background-color: #3157a4;
     color: white;
-    border-radius: 5px;
 }
-button:hover { background: black; }
-@media(max-width:600px) {
-    main { width: 90%; }
+
+form {
+    width: 90%;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px;
+    }
+
+    figure img {
+        width: 100%;
+    }
 }
